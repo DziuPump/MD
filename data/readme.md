@@ -38,8 +38,6 @@ XY example contains:
     }
   }
 }
-Dataset (/data/Filtered_Non-Functional_Requirements.csv) contains
-
 ```
 
 Dataset (Filtered_Non-Functional_Requirements.csv) contains non-functional requirements examples
