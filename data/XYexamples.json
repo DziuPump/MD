@@ -1,0 +1,205 @@
+[
+  {
+    "X": {
+      "id": "NFR-202",
+      "title": "System performance under load",
+      "description": "The application should handle up to 1000 concurrent users without performance degradation."
+    },
+    "y": {
+      "models": [
+        {
+          "name": "GPT-4o-mini",
+          "augmented_requirement": "When tested under simulated load of 1000 concurrent users, the system shall maintain an average response time below 2 seconds and no more than 1% failed requests.",
+          "test_cases": 7,
+          "coverage_score": 0.88,
+          "testability_score": 0.92,
+          "quality_score": 0.9,
+          "examples": [
+            {
+              "summary": "Load test with 1000 concurrent users",
+              "expected_result": "Average response time < 2s, error rate < 1%"
+            }
+          ]
+        },
+        {
+          "name": "Gemini-1.5-pro",
+          "augmented_requirement": "The system must support 1000 simultaneous sessions, maintaining a median response time under 1.5 seconds and 0.5% max failure rate.",
+          "test_cases": 9,
+          "coverage_score": 0.94,
+          "testability_score": 0.85,
+          "quality_score": 0.89,
+          "examples": [
+            {
+              "summary": "Concurrent load test with 1000 users",
+              "expected_result": "Median response time < 1.5s"
+            }
+          ]
+        },
+        {
+          "name": "Claude-3.5-sonnet",
+          "augmented_requirement": "Under a simulated workload of 1000 concurrent users, the platform shall respond within 2 seconds (95th percentile) and maintain 99% uptime.",
+          "test_cases": 6,
+          "coverage_score": 0.83,
+          "testability_score": 0.94,
+          "quality_score": 0.91,
+          "examples": [
+            {
+              "summary": "Uptime validation under heavy load",
+              "expected_result": "99% uptime maintained during test"
+            }
+          ]
+        }
+      ],
+      "comparison_summary": {
+        "best_coverage": "Gemini-1.5-pro",
+        "best_testability": "Claude-3.5-sonnet",
+        "best_overall": "GPT-4o-mini",
+        "notes": "Gemini produced the most complete coverage, but GPT maintained balanced quality and structure."
+      }
+    }
+  },
+  {
+    "X": {
+      "id": "FR-101",
+      "title": "User password reset feature",
+      "description": "As a user, I want to reset my password via email link so that I can regain access if I forget it.",
+      "type": "Functional Requirement"
+    },
+    "y": {
+      "models": [
+        {
+          "name": "GPT-4o-mini",
+          "generated_test_cases": 4,
+          "coverage_score": 0.9,
+          "clarity_score": 0.92,
+          "testability_score": 0.88,
+          "quality_score": 0.9,
+          "latency_ms": 4300,
+          "cost_usd": 0.012,
+          "examples": [
+            {
+              "summary": "Verify password reset email is sent for valid user",
+              "expected_result": "Email with reset link is received within 1 minute."
+            },
+            {
+              "summary": "Check invalid email shows proper error",
+              "expected_result": "System displays 'Email not found' message."
+            }
+          ]
+        },
+        {
+          "name": "Gemini-1.5-pro",
+          "generated_test_cases": 5,
+          "coverage_score": 0.95,
+          "clarity_score": 0.85,
+          "testability_score": 0.89,
+          "quality_score": 0.9,
+          "latency_ms": 4900,
+          "cost_usd": 0.015,
+          "examples": [
+            {
+              "summary": "Verify email reset workflow completion",
+              "expected_result": "User can successfully set new password via emailed link."
+            },
+            {
+              "summary": "Check expired reset link behavior",
+              "expected_result": "System shows 'Link expired' and prevents password change."
+            }
+          ]
+        },
+        {
+          "name": "Claude-3.5-sonnet",
+          "generated_test_cases": 3,
+          "coverage_score": 0.82,
+          "clarity_score": 0.96,
+          "testability_score": 0.91,
+          "quality_score": 0.89,
+          "latency_ms": 3700,
+          "cost_usd": 0.01,
+          "examples": [
+            {
+              "summary": "Verify new password meets policy",
+              "expected_result": "Password change fails if it doesn't meet complexity requirements."
+            }
+          ]
+        }
+      ],
+      "comparison_summary": {
+        "best_coverage": "Gemini-1.5-pro",
+        "best_clarity": "Claude-3.5-sonnet",
+        "best_testability": "Claude-3.5-sonnet",
+        "best_overall": "GPT-4o-mini",
+        "notes": "Gemini achieved highest coverage but slightly less clarity; GPT-4o maintained most balanced results."
+      }
+    }
+  },
+  {
+    "X": {
+      "id": "NFR-205",
+      "title": "API response time under load",
+      "description": "The system shall respond to API requests within 2 seconds under a load of 500 concurrent users.",
+      "type": "Non-Functional Requirement"
+    },
+    "y": {
+      "models": [
+        {
+          "name": "GPT-4o-mini",
+          "generated_test_cases": 6,
+          "coverage_score": 0.92,
+          "testability_score": 0.95,
+          "consistency_score": 0.93,
+          "clarity_score": 0.9,
+          "quality_score": 0.93,
+          "latency_ms": 6200,
+          "cost_usd": 0.02,
+          "examples": [
+            {
+              "summary": "Load test with 500 concurrent users",
+              "expected_result": "Average response time ≤ 2s, 95th percentile ≤ 2.5s."
+            }
+          ]
+        },
+        {
+          "name": "Gemini-1.5-pro",
+          "generated_test_cases": 8,
+          "coverage_score": 0.96,
+          "testability_score": 0.89,
+          "consistency_score": 0.91,
+          "clarity_score": 0.88,
+          "quality_score": 0.91,
+          "latency_ms": 7100,
+          "cost_usd": 0.023,
+          "examples": [
+            {
+              "summary": "Stress test with ramp-up to 800 users",
+              "expected_result": "System maintains < 3s response at 800 concurrent load."
+            }
+          ]
+        },
+        {
+          "name": "Claude-3.5-sonnet",
+          "generated_test_cases": 5,
+          "coverage_score": 0.87,
+          "testability_score": 0.96,
+          "consistency_score": 0.94,
+          "clarity_score": 0.92,
+          "quality_score": 0.92,
+          "latency_ms": 5400,
+          "cost_usd": 0.018,
+          "examples": [
+            {
+              "summary": "Latency verification under steady load",
+              "expected_result": "All endpoints respond ≤ 2s average across 10-minute run."
+            }
+          ]
+        }
+      ],
+      "comparison_summary": {
+        "best_coverage": "Gemini-1.5-pro",
+        "best_testability": "Claude-3.5-sonnet",
+        "best_overall": "GPT-4o-mini",
+        "notes": "GPT produced the most technically complete and balanced test suite; Gemini covered more edge cases but introduced minor redundancy."
+      }
+    }
+  }
+]
