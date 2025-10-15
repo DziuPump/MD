@@ -1,0 +1,405 @@
+,Type,Requirement
+0,PE,The system shall refresh the display every 60 seconds.
+2,US, If projected  the data must be readable.  On a 10x10 projection screen  90% of viewers must be able to read Event / Activity data from a viewing distance of 30
+3,A, The product shall be available during normal business hours. As long as the user has access to the client PC  the system will be available 99% of the time during the first six months of operation.
+4,US, If projected  the data must be understandable. On a 10x10 projection screen  90% of viewers must be able to determine that Events or Activities are occuring in current time from a viewing distance of 100
+5,SE,The product shall ensure that it can only be accessed by authorized users.  The product will be able to distinguish between authorized and unauthorized users in all access attempts
+6,US,The product shall be intuitive and self-explanatory.  
+7,PE,The product shall respond fast to keep up-to-date data in the display.
+39,O,The product must support Internet Explorer 5.5 and above.
+40,O,The product must support Mozilla Firefox 1.0 and above.
+41,O,The product shall interface with the Choice Parts System.  This provides the feed of recycled parts data.
+42,O,The product shall run on the existing hardware for all environments.
+43,O,The product shall adhere to the corporate Architecture guidelines
+47,PO,The software product is expected to run on Windows or Linux platforms.
+48,US,The product shall be easy to use by Adjusters and Collision Estimators.  95% of Adjusters and Collision Estimators shall find the product easy to use.
+49,US,The product shall increase productivity of Collision Estimators. 80% of the Collision Estimators shall agree their productivity has increase within 1 month of using the product.
+50,US,Users shall feel satisfied using the product.  85% of all users will be satisfied with the product.
+51,US,The product shall be easy to learn by Adjusters and Collision Estimators.  The product shall be learned with two days onsite training
+52,US,The user shall easily locate instructions while using the product.  User help can be found within 90% of the system.
+53,PE,The search for recycled parts shall take no longer than 15 seconds.  The search results shall be returned in under 15 seconds.
+54,PE,The search for the preferred repair facility shall take no longer than 8 seconds.  The preferred repair facility is returned within 8 seconds
+55,PE,The recycled parts audit report shall be returned to the user within 10 seconds.  The audit report shall be returned within 10 seconds.
+56,PE,The preferred repair facility ratings shall be saved within 5 seconds. The save shall occur within 5 seconds.
+57,A,The product shall adhere to the corporate online availability schedule.  The application is brought down only within 98% of the scheduled outages per the availability schedule.
+58,A,The product shall achieve a 98% uptime. The product shall not fail more than 2% of the available online time.
+59,SC,The product shall be able to handle up to 1500 simultaneous users. The system shall perform with 1500 users as a time.
+60,SC, The average number of recycled parts records per day shall be 50 000.
+61,SC, The product shall be able to handle 10 000 concurrent users within 2 years of the initial launch.
+62,O, For estimators  the product shall be able to be operated in a repair facility during dirty and noisy conditions.
+63,O,The product shall interface with the ChoiceParts system once per day at approximately 1
+64,O,The maintenance of the product will fall within the established corporate maintenance windows.
+65,O,The product shall be supported using the corporate support center.
+66,O,Product installations and upgrades shall be handled by the middleware technology team within established launch time frames.
+67,SE,Only adjusters can request recycled parts audit reports. No users without an adjuster role shall request recycled parts audits.
+68,SE,Only adjusters with a supervisor role can update preferred repair facility ratings. Users without the supervisor role cannot access the repair facility ratings.
+69,SE,Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.
+70,SE,Only valid data shall be entered into the system.  No invalid data shall be entered into the system.
+71,SE,One insurance company shall not be able to view another insurance companys claim data.
+72,SE,The product shall free of computer viruses.
+73,SE,The system shall prevent malicious attacks including denial of service.
+113,O, The product must work with most database management systems (DBMS) on the market  whether the DBMS is colocated with the product on the same machine or is located on a different machine on the computer network.
+114,O,The product will function alongside server software on any operating system where the Java runtime can be installed.
+115,O,The product will require collaboration with a database management system (DBMS).  The DBMS may be located on the same machine as the product or on a separate machine residing on the same computer network.
+116,O, The product must make use of web/application server technology.  Open source examples include Apache web server  Tomcat  and the JBoss application server.
+117,O, A database management system such as Oracle  DB2  MySql or HSQL will need to be integrated with the product.
+120,US,The product shall make the users want to use it. 80% of the users surveyed report they are regularly using the product after the first 2 weeks post-launch.
+121,US,The product shall be easy to use. 90% of users will be able to successfully reserve a conference room within 5 minutes of product use.
+122,US,The product shall give users feedback when necessary. 80% of the users surveyed report that the product accurately confirms their actions.
+123,US,The product shall allow the user to select a chosen language from one of the target market countries.
+124,US,The product shall allow for customization of start page and views preferences.
+125,US, An employee will be able to successfully use the product within a few minutes.  After informally navigating the product for less than 15 minutes  users shall be able to successfully setup meetings and reserve conference rooms.
+126,US,The product shall use a standard navigation menu familiar to most web users.
+127,US,The product shall allow for intuitive searching of available conference rooms.
+128,US,The product shall conform to the Americans with Disabilities Act.
+129,PE,The response shall be fast enough to avoid interrupting the user s flow of thought.  90% of tasks shall complete within 5 seconds.  98% of tasks shall complete within 8 seconds.
+130,A, Aside from server failure  the software product shall achieve 99.99% up time.
+132,SC, The product shall be capable of handling up to 1 000 concurrent requests.  This number will increase to 2 000 by Release 2.  The concurrency capacity must be able to handle peak scheduling times such as early morning and late afternoon hours.
+133,SC, The product shall be able to process 10 000 transactions per hour within two years of its launch.  This number will increase to 20 000 by Release 2.
+134,SC,The product shall be expected to operate for at least 5 years for each customer installation.
+135,O,The product shall be used in office environments.
+136,O,The product must be able to interface with any HTML browser.  The product shall transmit data between the user and the product without problems. The product shall display HTML properly in 80% of all HTML browsers tested (minimum is to test 8 browsers).
+137,O,The product must be able to interface with various database management systems. The product shall communicate successfully with the database management system on 100% of all transactions.
+138,O,The product must be able to interface with various email servers. The product shall be able to send email.
+139,O,The product shall be available for distribution via the Internet as a binary or ZIP file.
+140,O,The product shall be available for distribution as a packaged CD.
+141,O, The product will be available for licensing as a one-server  two-five servers  or five-or-more servers license.
+142,US,A new user must be able to be added to the system within 10 minutes.  90% of new users are able to log into the system within 10 minutes.
+143,MN,The product must be designed using Design Patterns and coding best practices.  90% of maintenance software developers are able to integrate new functionality into the product with 2 working days.
+144,MN,The product must be highly configurable for use with various database management systems for the end users.  80% of end users are able to integrate new database management systems with the product without changing the product s software code.
+145,MN,Maintenance releases will be offered to customers once a year.  The releases shall take no longer than 5 minutes for 80% of the customer base to install.
+146,US,Every registered user will have access to the product s support site via the Internet.  70% of registered users shall find a solution to their problem within 5 minutes of using the support site.
+147,MN,The customer shall be able to easily integrate new building maps with the product throughout the product s lifecycle.  Integration of new maps with the product shall be possible with little to no support from product support staff.
+148,US, The product shall be translated into foreign languages other than the target market countries  languages in future releases.  For each emerging target market  it shall take no more than 5 days to configure the product for that market s language.
+149,O, The product is expected to integrate with multiple database management systems.  The product will operate with Oracle  SQL Server  DB2  MySQL  HSQL  and MS Access.
+150,O,The product shall be able to be installed in any operating environment within 2 days.
+151,SE,The product shall ensure that only company employees or external users with company-approved user IDs may have product access.  100% of all logons shall be by either company employees or external users with company-approved user IDs.
+152,SE,Only managers are able to perform search queries for reservations by user.  100% of all search queries for reservations by user shall be from logons of only management logons.
+153,SE,The product shall ensure that the database s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.
+154,SE,The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems  data shall remain 100% uncorrupted each time malicious data is input into the product.
+156,SE,The product shall have the ability to receive automatic software updates as new threats emerge.  100% of customers will be able to receive automatic software updates transmitted to the installed product.
+157,SC,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.
+158,US,The product shall be able to display calendar dates and times according to the user s locale.  90% of survey respondents from each target market country will find that the date and time formatting of the product is correct.
+159,O,The product must be developed with the J2SE/J2EE programming language libraries
+187,PE,Recreation of Inventory Quantity Adjustment for the period of previous 30 days shall take no more than 30min.
+188,PE,The System shall allow for a minimum of  6 users to work at the same time.
+189,O,The System shall utilize currently owned computer equipment.
+190,O,The System shall be able to automatically backup business data and restore them on demand.
+191,SE,The System shall maintain consistent security.  Any changes in user passwords and/or permissions should take affect in all parts of the System.
+192,SE,The System shall granularly control access rights to all major subsystems.  It should be possible to assign access rights to all subsystems independently.
+194,O,The System shall not require additional third party licenses resulting in royalty fees.
+210,PE,Administrator shall be able to activate a pre-paid card via the Administration section in under 5 seconds.
+211,PE, Customer shall be able to check the status of their prepaid card  by entering in the PIN number  in under 5 seconds.
+212,PE,System shall let customers register on the website as a  pay as you go  user in under 5 minutes.
+213,PE,System shall let customers register on the website as a  unlimited movie subscriber  user in under 10 minutes.
+214,PE,System shall let existing customers log into the website with their email address and password in under 5 seconds.
+215,PE, System shall let customers cancel their account  process shall take no longer than 2 minutes.  Database will mark the account as inactive  and user will not be able to log into the website.
+216,PE,System shall let administrator de-activate a customer account in under 1 minute. Customer will no longer be able to access the website.
+217,PE,System shall let administrator add/remove movies on the website in under 5 minutes.  Entered movie information will be stored in the database and will now be available on the website.
+218,PE,System shall let the administrator add/remove categories on the website in under 5 minutes.
+219,PE,System shall let Izogn Manager access sales and usage statistics in under 2 minutes.
+220,PE,System shall let administrators generate unique pre-paid pins in under 2 minutes and generate an Excel file with the generated PINs.
+224,US,The product should be able to be used by 90% of novice users on the Internet.
+225,US, Users should only have to navigate through a maximum of 4 pages  to create an account with the website.
+226,US,Users should be able to access their streaming movies in under 2 clicks after logging into the website.
+227,US,An anonymous survey will show that 70% of customers are comfortable purchasing streaming movies after 2 weeks using the website.
+228,US,An anonymous survey will show that 95% of customers are comfortable using and purchasing pre-paid cards after a month of using the system.
+229,US,The product shall retain the customer s buying preferences and information.
+230,US,The product shall be easy for customers with novice skills on the  Internet to purchase and watch streaming movies.  Customers should be able to purchase and watch a pre-determined movie in under 3 minutes.
+231,US,The product shall use symbols and words that are naturally understandable by users familiar with websites
+232,US,The website will use standard Internet conventions when interacting with the user.
+233,PE, Any interface between a user and the automated system shall have a maximum response time of 5 seconds  unless noted by an exception below.
+234,PE, When purchasing a streaming movie or pre-paid card via credit card  the processing time should have a maximum response time of 15 seconds.
+235,PE, When streaming a movie  the buffering time should take no longer than 10 seconds (plus any latency on the user s connection.)
+236,PE, While streaming a movie  buffering should only occur if there is latency in the user s connection.
+237,SE, All credit card information will be secured on the server  and only accessible by authorized Izogn administrators.  Information will be encrypted in the database.
+238,A, The website shall be available for use 24 hours per day  365 days per year.
+239,A,The website shall achieve 99.5% up time.
+240,A, All movies shall be streamed on demand  at any time of the day.
+243,SC,The streaming server will support 50 simultaneous streaming connections.
+244,SC,The streaming server will support a maximum of 700 movies; new servers can be added to support more movies.
+245,SC, The server will support a maximum of 1 000 simultaneous users.
+246,SC, The website shall be capable of supporting 100 000 customers.
+247,MN,The product shall be expected to operate within the maximum maintenance budget for a minimum of 2 years.
+248,O,All aspects of the website shall be accessed by a web browser over the Internet.
+249,O,The same hardware supporting the current website will be used to support the new system.
+250,O, We must be able to interface with the following browsers
+251,O,Website must interface with the CyberSource API to process credit card transactions.
+252,O,Website must be fully operational with MSN TV2.
+253,O,Movies shall be encoded and streamed via Windows Media Player 9.0.
+254,O,Movies shall be encoded for 56k and 256k streams.
+255,MN,Promotional updates to the website should take a day to update.
+256,PE,Izogn Administrator must be able to update the category listings on the website within 2 minutes.
+257,PE,Izogn Administrator must be able to add new products to the website within 2 minutes.
+258,A,The system will provide a 24 hour 800 toll free number for support to its customers.
+259,US,The website will provide a help section with answers and solutions to common problems.
+260,A, Velkat staff will be available for phone support between 7am-7pm  M-F to provide technical support to the Izogn administrators.
+261,O,The product shall be able to be installed in the specified environment within 1 working day.
+262,SE,Only registered customers can purchase streaming movies.
+263,SE, A customer can only stream a movie if they purchased it  and are within the 2 day viewing period.
+264,SE,Only authorized personnel can access customer records in the database.
+265,SE,Only administrators can activate a pre-paid card.
+266,SE,Only authorized personnel can access sales information.
+267,SE,The website shall prevent its data from being corrupted when incorrect data is entered in.
+268,SE, The website shall protect itself from intentional abuse  and notify the administrator at all occurrences.
+269,SE,Data integrity scripts will be run on a weekly basis to verify the integrity of the database.
+270,SE, The website shall make its user aware of its information practices before collection data from them via a Privacy Policy  accessible on all pages of the website.
+271,SE,The system shall notify customers of changes to its information policy.
+272,SE,The system shall reveal private information only in compliance with the organization s information policy.
+273,SE, All customer information will be stored on a secure database  accessible only to authorized personnel.
+274,SE,All credit card information will be encrypted in the database.
+275,SE,The streaming server will have anti-virus software to prevent infection of malicious viruses.
+279,O,The website should use Flash to provide animation on the home page.
+303,PE,Total lead cycle time must be completed in 5 minutes for 90% of lead volume between the business hours of 8AM CST to 8PM CST; then 3 minutes for 99% of lead volume during off business hours.
+304,PE,No lead evaluation will complete in a time period longer than 25 seconds for 97% of all leads processed.
+305,PE,For leads that process longer than 25 seconds the system will record the event and duration
+306,PE,The process must fit within the processing time conditions set forth by the Auto Rep Assignment process in which a lead is assigned within 3 minutes of the total life cycle.
+307,O,The lead washing process will operate within the established physical web service structure.
+308,O, The washing process must use a non binding  neutral data format  such as xml  when receiving and processing lead data.
+309,A,Defect reports will be available to technical units on a 24x7 basis.
+310,MN,Washing parameters will be updated during scheduled maintenance hours.
+334,A, The product shall be available 24 hours per day  seven days per week.
+335,PE,The product shall able to handle a large number of games simultaneously.
+336,PE,The response time shall be fast enough to maintain the flow of the game.  The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.
+337,PE,The product shall protect the identity of the players. The product shall provide players no access to information that might reveal the identity of another player.
+338,US,The product shall be intuitive and self-explanatory.  Nine out ten users shall be able to successfully complete a game with no training.
+339,US, The product shall be available to players who understand English  Spanish and French.  The product shall allow the user to select the language upon accessing the product.
+340,SE,The product shall provide players no access to information that might reveal the identity of another player
+341,PE,The response time shall be fast enough to maintain the flow of the game. The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.
+380,US,The system shall be easy to use by callers and supervisors. Callers and supervisors must be able to accomplish any system task within 2 minutes.
+381,US,The system shall be easy to learn by callers and supervisors. Callers and supervisors shall learn how to use the system within 10 minutes.
+382,PE,The system shall be responsive. At the DePaul TeleServices Center  when a supervisor uses the system to view a callers schedule  the system response time must be no more than 2 seconds 90% of the time and no more than 5 seconds the rest of the time.
+383,PE,On a 56k connection  the system response time for all operations must be no more than 6 seconds 90% of the time.
+384,PE,On a 112k connection or faster  the system response time for all operations must be no more than 3 seconds 90% of the time.
+385,A,The system shall have high availability every day of the year.The system must be available for use between 12
+386,A,The system must be available for use between 7
+387,MN,The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.
+388,SE,The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.
+389,SE,The product shall ensure that only supervisors can enter a caller s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.
+390,SE,The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.
+395,US,The product shall provide Monitoring Services.The product shall be easy for System Administrators and DBAs to use after two weeks of usage.
+396,US,The product shall provide Error Tracking Services.The product shall help the System Administrators and DBAs to resolve transaction errors 99% of the time.
+397,US,The product shall provide Portals.The product shall help System Administrators to analyze the transactions with ad-hoc reporting and KPIs (Key Performance Indicators)
+398,PE,The product shall provide Asynchronous Messaging.The product shall provide asynchronous messaging to enable parallel processing and reduce the overhead in communications
+399,PE,The product shall provide Multi-threading and Load Balancing.The product shall provide multi-threading technology as well as load balancing to overcome data load spikes and traffic.
+400,PE,The product shall process messages within 2 seconds.The product shall have a maximum message processing time of 2 seconds
+401,PE,The product shall poll the system for messages every second.The product shall poll the system for new messages at a maximum of every 1 second.
+402,PE,The product shall provide Dynamic Change Support and Transparent resource addition.The product shall support Transparent Resource addition and Dynamic Change support to provide scalability and avoid service interruptions of more than 1 day.
+403,A,The product shall be available 99% of the time. Rationale
+406,SC,The product shall be able to process all transactions.The product shall process minimum of 1 million transactions per year.
+407,O,The product shall be platform independent.The product shall enable access to any type of development environment and platform.
+408,O,The product shall interface CSR and Datastream.The product shall exchange messages between CSR and EAM on a real time basis without any direct interfaces between two systems.
+409,MN,The product shall continue to operate during upgrade  change or new resource addition.The product shall be able to continue to operate with no interruption in service due to new resource additions.
+410,MN,The product shall be updated on a regular basis.The product will have a new major feature introduced every six months and quarterly maintenance releases every six months.
+411,MN,The product shall operate with every platform.The product shall accommodate any new technology without any change in its architecture.
+412,SE, The product shall have security.The product shall provide authentication  and authorization.
+413,SE,The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.
+414,SE,The product shall have audit capabilities.The product shall store messages for a minimum of one year for audit and transaction tracking purposes.
+419,US,The system must use a point and click interface. 100% of all selection and navigation functionality must be able to be activated/selected by either a mouse or a keyboard
+420,US,The interface shall be easy to use. 90% of users should be able to successfully use the system to generate a report on their first use. The interface should adhere to IBM usability standards.
+421,US,Rreports must be easy to generate. eports must be generated within one button click and exported within one button click (after selecting the report)
+422,US,A user shall be able to use the system without instruction after a short amount of time. After one use a user should understand and remember 90% of the system usage and navigation.
+423,US,All CCR users shall receive training before the WCS system is deployed. One training session will be held for 100% of CCR users before system deployment (based on a CCR user being available)
+424,US,The WCS system shall use appropriate nomenclature and terminology as defined by the Corporate Community Grants organization. All interfaces and reports will undergo usability tests by CCR users.
+425,A,The WCS system shall be available at all times as long as IBM s internal intranet W3 is accessible. The WCS system will be available 95% of the time IBM s internal intranet W3 is available.
+426,SC,The WCS system shall have the ability to connect other designated WCS databases currently not included in the system.
+427,SC,The WCS system shall have the ability to include data for regions outside the United States and be accessed by users outside of the United States if approved by CCR management.
+428,O,The WCS system shall be run in a Windows environment. The WCS shall be accessed by users through the Internet on an IBM computer running a Windows 2000 or above operating system.
+429,O,The Brio portion of the WCS system must be able to export files in spreadsheet form (Microsoft Excel and Lotus 1-2-3 formats).  Brio will provide buttons in the user interface that produce/export reports in .xls or .123 file formats.
+430,MN,The WCS system must run queries to the WCS databases once again (on a specified day) to update the available data available to CCR users. Queries must be made to external databases for data refresh once a week.
+431,MN, All changes  updates  and additions to the WCS system shall be updated in the WCS Developer and WCS User Guides. Every change must be reflected in WCS system documentation
+432,SE,The system shall only be accessed by authorized Corporate Community Grants (CCR) employees. Users must be authenticated using their IBM intranet user name and password.
+433,SE,The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user s computer.
+434,SE,Each team owner will need to use a username and password in order to be authenticated to reach the team owner s page
+435,SE,The Commissioner will be the only authorized user per league to adjust league settings.
+439,US,A new user shall be able to navigate through the league and team pages within 30 seconds of reaching the start-up page.
+440,US,Users shall be able to reach the  add    drop   and  trade player  pages with one click from the team owner s page.
+441,US,Users shall be able to view at least 25 NFL player statistics and points on each page.
+442,US,The application shall ask the user to confirm dropping a player or trading a player before performing the action.
+443,PE,The application shall be able to complete every user transaction within one fourth of a second of receiving the request over the network.
+444,A,The application shall have a downtime of at most 10 minutes per year.
+445,O,The application shall run on a web application server.
+446,PE,The maximum wait time for a user navigating from one screen to another within the Disputes application shall be no more than 5 seconds.
+447,PE,The Disputes application shall support 350 concurrent users without any degradation of performance in the application.
+448,O, The Disputes application shall be available 24x7x365  with the exception of the following scheduled maintenance windows.  Monday   Saturday 3
+449,O,The Disputes application shall interface with the Statement Database. The Statement Database provides the transaction details to the Disputes System. All transaction details must be obtained from the Statement Database
+450,O,A primary database will be used to store cached data for active users.
+451,A,The system shall achieve 95% up time.
+454,US,The system shall be used by realtors with no training.
+455,US,The system shall be intuitive and self explanatory.
+456,US,The product shall be easy for a realtor to learn.
+457,US,The product shall use symbols and words that are naturally understandable by the realtor community.
+458,PE,The product shall produce search results in an acceptable time
+459,PE,The search results shall be returned no later 30      seconds  after the user has entered the search criteria
+460,PE,The product shall generate a CMA report in an acceptable time.
+461,PE,The CMA report shall be returned no later 60 seconds after the user has entered the CMA report criteria.
+462,PE,The product shall synchronize contacts and appointments in an acceptable time.
+463,PE,The product shall synchronize with the office system every hour.
+464,A, The product shall be available for use 24 hours per day  365 days  per year
+465,A, Out of 1000 accesses to the system  the system is available 999 times.
+470,SC,The product shall be able to support multiple remote users
+471,SC,The product shall be able support 1000 simultaneous users.
+472,SC,The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.
+473,US,The product shall be installed by an untrained realtor   without recourse to separately-printed instructions.
+474,US,90% of untrained realtors shall be able to install the product on their device without printed instructions
+475,PO,The product is expected to run on Windows CE and Palm operating systems.
+476,SE,Only registered realtors shall be able to access the system.
+477,SE,Every user of the system shall be authenticated and authorized.
+478,SE,The product shall prevent its data from incorrect data being introduced.
+483,SC,system shall be able to handle all of the user requests/usage during business hours.
+484,SC,The system shall cater to 10 simultaneous users from 9am to 5pm.
+485,SC,The system shall be capable of processing 100% of nursing students and their classes for the next 10 years.
+486,SC,The system shall be expected to manage the nursing program curriculum and class/clinical scheduling for a minimum of 5 years.
+487,O,The system shall able to operate within a business office environment typical of the Nursing Department at DePaul University.
+488,O,The system shall be used within the specifications defined by the computers used by the Program Administrators/Nursing Staff Members.
+489,O,A secondary database will be used to store historical statistics and data.
+495,US,The system shall be easy to use by the Program Administrators/Nursing Staff Members.
+496,US,All of the users shall be able to use the system after one day of training.
+497,US,The system shall help the user avoid making mistakes while scheduling classes and clinicals for the nursing students.
+498,US,The number of mistakes noted by the students shall be decreased by 50% in the first year.
+499,US,The system shall be intuitive to the Program Administrators/Nursing Staff Members.
+500,US,2 out of 3 Program Administrators/Nursing Staff Members shall successfully be able to use the system to manage the scheduling of classes and clinicals.
+501,US,The system shall use symbols and words that are naturally understandable by the user community.
+502,US,The verbiage used within the system shall be consistent with Standard English and the terminology of the national Nursing Community.
+503,PE,Staff members shall be able to complete a set of tasks in a timely manner.
+504,PE,The response time of general student management tasks shall take no longer than 5 seconds and the response time of schedule generation shall take no longer than 30 seconds.
+505,A,The system shall be available for use between the hours of 8am and 6pm.
+506,O,The system shall operate within the Windows XP Professional operating system.
+507,O,The system shall interface with CampusConnect s central server
+508,O,The system shall interface with the faculty central server.
+509,O,The system shall interface with the student master server.
+510,O,We must be able to interface with any HTML browser.
+511,SE,Only authorized users shall have access to clinical site information.
+512,SE,Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.
+513,SE,Only authorized users shall have access to students  personal information.
+514,SE,Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students  personal information.
+515,SE,Only authorized users shall have access to the portion of the system that interfaces with CampusConnect.
+516,SE,Fit Criterion
+517,SE,The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.
+518,SE,The system shall protect private information in accordance with the organization s information policy.
+519,SE,The system shall be built such that it is as secure as possible from malicious interference.
+520,SE,The system shall use the organization s standard virus protection software to help monitor threats to itself.
+528,MN,Application updates shall occur between 3AM and 6 AM CST on Wednesday morning during the middle of the NFL season.
+529,MN,New System version releases shall be released at the beginning of each NFL season.
+539,A,The RFS system should be available 24/7  especially during the budgeting period. The RFS system shall be available 90% of the time all year  and 98% during the budgeting period. 2% of the time  the system will become available within 1 hour of the time that the situation is reported.
+540,O,98% of the user workstations shall meet the minimum hardware requirements prior to implementation. Minimum Hard Disk Space
+541,O,98% of the user workstations shall meet the minimum software requirements prior to implementation
+542,O,The RFS system should be able to easily interface with the BDW environment  in order to load the data.  	7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process  every year. The data will be as of October month-end. 	Test files (7) shall be loaded up to 5 times throughout the year  from the BDW.
+543,MN,Changes to revenue and expense formulae must be applied to the RFS system  every year  prior to the budgeting process start. Revenue and expense formulae will be updated within one week of their receipt  after which 2 weeks will be allotted to testing of the budget calculations  to be conducted jointly by the project development team and PCG Finance.
+544,MN,New branches/complexes/districts/regions and revenue/expense accounts added to the BDW  must be reflected in the RFS system. 100% of the entities (mentioned above) available as of October month-end  will be loaded into the RFS system  prior to the budget start process.
+545,SE,Only authorized user shall access the RFS system. ONLY users that exist in the UAS system  with the RFS system assigned to their role(s)  shall access the RFS system and use it.
+546,SE,User access should be limited to the permissions granted to their role(s) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles. Access to functionality within RFS system is dependent on the privileges/permission assigned to the role..
+549,US,The users should be able to easily use the system to successfully complete their budgets  within the stipulated time for completion. With a week of training prior to product implementation  98% of the users shall complete their budgets within the stipulated time.
+550,PE,The product interface should be fast. The response time of the product interface should not exceed 2 seconds 90% of the time. For 10% of the time  the response time should not be more than 10 seconds.not be more than 10 seconds.
+557,NFR,"Fast internet connection is not mandatory, but it would increase the performance of the application"
+559,NFR,"As Google Maps API is being used for this application, it is mandatory that we abide by the terms of use specified by Google"
+582,NFR,The application must be able to link up with the INTERNAL system in order for users to properly log in and be identified.
+583,NFR,This information must be kept secure.  
+584,NFR,The data entry should not be that much more difficult than if they were at an actual computer.  
+585,NFR,"Because this application will be on a phone, portability is also important.  We don’t want it to take up so much space or be too slow causing the user’s to not be able to fit it on the device."
+586,NFR,"When the user fills all necessary fields, an activation mail will be sent to
+users mail address"
+587,NFR,"User will be able to log in and start using the system just after activating
+his/her account."
+611,NFR,Search form should be  added to home page
+612,NFR,Sites should be added correctly to the search engine
+647,NFR,Project admins will need to be authorized before they can use the admin interface to manage the sites in the project.
+648,NFR,Standard web security measure should be implemented.
+649,NFR,"This application should be easily extendable, maintainable and able to be released as an open-source application"
+650,NFR,The app runs on a smart phone with operating system Android version 2.3.
+651,NFR,"All layout shall be according to the TU/e corporate identity, unless in conflict with the guidelines of requirements UCOR003-UCOR006."
+652,NFR,Icons are according to the Android Icon Guidelines.
+653,NFR,The user interfaces should be according to the Android User Interface Guidelines.
+654,NFR,The Twitter â€tweetâ€ interface should be according to the Twitter Guidelines.
+655,NFR,The Facebook â€likeâ€ interface should be according to the Facebook Guidelines.
+656,NFR,The campus map covers the campus of the TU/e.
+657,NFR,The campus map covers the central train station of Eindhoven.
+658,NFR,A new stylistic map has the right dimensions.
+659,NFR,A new stylistic map is geographically correct.
+660,NFR,News is restricted to what is available in the feeds on the list of news RSS-feeds.
+661,NFR,Agenda is restricted to what is available in the feeds on the list of agenda RSS-feeds.
+662,NFR,Information about a certain person is restricted to what is available on the employee pages of the TU/e
+663,NFR,The information and the search methods of the Encyclopedia-app are restricted to the services provided by the MediaWiki of the TU/e Encyclopedia.
+664,NFR,The information and the search methods of the Studenthandbook-app are restricted depending on file format of the handbook-information.
+665,NFR,Response Time GIST: The fastness of the search SCALE: The response time of a search METER: Measurements obtained from 1000 searches during testing. MUST: No more than 2 seconds 100% of the time. WISH: No more than 1 second 100% of the time.
+666,NFR,"System Dependability GIST: The fault tolerance of the system. SCALE: If the system loses the connection to the Internet or to the GPS device or the system gets some strange input, the user should be informed. METER: Measurements obtained from 1000 hours of usage during testing. MUST: 100% of the time."
+667,NFR,Hard Drive Space GIST: Hard drive space. SCALE: The applicationâ€™s need of hard drive space. METER: MB. MUST: No more than 20 MB. PLAN: No more than 15 MB. WISH: No more than 10 MB. MB: DEFINED: Megabyte
+668,NFR,Application Memory Usage GIST: The amount of Operate System memory occupied by the application. SCALE: MB. METER: Observations done from the performance log during testing MUST: No more than 20 MB. PLAN: No more than 16 MB WISH: No more than 10 MB Operate System: DEFINED: The mobile Operate System which the application is running on. MB: DEFINED: Megabyte.
+669,NFR,System Reliability GIST: The reliability of the system. SCALE: The reliability that the system gives the right result on a search. METER: Measurements obtained from 1000 searches during testing. MUST: More than 98% of the searches. PLAN: More than 99% of the searches. WISH: 100% of the searches.
+670,NFR,System Availability GIST: The availability of the system when it is used. SCALE: The average system availability (not considering network failing). METER: Measurements obtained from 1000 hours of usage during testing. MUST: More than 98% of the time. PLAN: More than 99% of the time. WISH: 100% of the time.
+671,NFR,Internet Connection DESC: The application should be connected to the Internet.
+672,NFR,GPS Connection DESC: The application should be connected to the GPS device.
+673,NFR,"Communication Security GIST: Security of the communication between the system and server. SCALE: The messages should be encrypted for log-in communications, so others cannot get user-name and password from those messages. METER: Attempts to get user-name and password through obtained messages on 1000 log-in session during testing. MUST: 100% of the Communication Messages in the communication of a log-in session should be encrypted. Communication Messages: Defined: Every exchanged of information between client and server."
+674,NFR,Restaurant Owner Login Account Security GIST: Security of accounts. SCALE: If a restaurant owner tries to log in to the web portal with a non-existing account then the restaurant owner should not be logged in. The restaurant owner should be notified about log-in failure. METER: 1000 attempts to log-in with a non-existing user account during testing. MUST: 100% of the time.
+675,NFR,Admin Login Account Security GIST: Security of accounts. SCALE: If an admin tries to log in to the web portal with a non-existing account then the admin should not be logged in. The admin should be notified about log-in failure. METER: 1000 attempts to log-in with a non-existing user account during testing. MUST: 100% of the time.
+676,NFR,"Restaurant Owner Account Security GIST: Security of restaurant owners accounts. SCALE: A restaurant owner and IP address should not be able to log-in for a certain time period after three times of failed log-in attempts. METER: 1000 attempts to log-in during the lock period after user account has been locked because of failed log-in attempts of three times. MUST: The locking period should be half an hour, and during that period the log-in function is disabled."
+677,NFR,"Admin Account Security GIST: Security of admin accounts. SCALE: An admin and IP address should not be able to log-in to the web portal for a certain time period after three times of failed log-in attempts. METER: 1000 attempts to log-in during the lock period after user account has been locked because of failed log-in attempts of three times. MUST: The locking period should be half an hour, and during that period the log-in function is disabled."
+678,NFR,"User Create Account Security GIST: The security of creating account for users of the system. SCALE: If a user wants to create an account and the desired user name is occupied, the user should be asked to choose a different user name. METER: Measurements obtained on 1000 hours of usage during testing. MUST: 100% of the time."
+679,NFR,"Restaurant Owner Create Account Security GIST: The security of creating account for restaurant owners of the system. SCALE: If a restaurant owner wants to create an account and the desired user name is occupied, the restaurant owner should be asked to choose a different user name. METER: Measurements obtained on 1000 hours of usage during testing. MUST: 100% of the time."
+680,NFR,Application extendibility DESC: The application should be easy to extend. The code should be written in a way that it favors implementation of new functions.
+681,NFR,Application testability DESC: Test environments should be built for the application to allow testing of the applications different functions.
+682,NFR,Application portability DESC: The application should be portable with iOS and Android.
+683,NFR,Performance Requirements 10000 users should be able to use the system at the same time. The response time of the system should be 2 seconds at most.
+684,NFR,Design Constraints We will use â€œwaterfall methodâ€ and Object â€“ Oriented Programming paradigm. We will use Java as programming language. The Android version of the device should be 2.3 or higher. The system requires Internet connection all the time.
+685,NFR,â€‹ The system will be designed in such a way that the algorithms for the four main units will be able to be easily swapped out.
+686,NFR,The overall accuracy of the Web APIâ€™s response will be measured using a developer-made testing set.
+687,NFR,The overall accuracy is calculated by dividing total number of correct answers by the number of questions asked.
+688,NFR,The accuracy of the Generic Question Constructionâ€‹ part will be close to 80% 
+689,NFR,Modularity  The system will be designed in such a way that the algorithms for the four main units will be able to be easily swapped out. 
+690,NFR,"The overall accuracy of the Web APIâ€™s response will be measured using a developer-made testing set. The overall accuracy is calculated by dividing total number of correct answers by the number of questions asked. The accuracy of the Generic Question Constructionâ€‹ part will be close to 80%. The accuracy of the Generic Answer Constructionâ€‹ unit will be close to 70% The accuracy of the Generic Answer Populationâ€‹ unit will be close to 70% Drexel facilitiesâ€™ locations and schedules will have accuracy greater than 70%  â€‹ Drexel staffâ€™s office locations, contact information, and positions will have accuracy greater than 70%. â€‹ Drexel policies including academics, admissions, information technology etc. will have accuracy greater than 70%.â€‹ â€‹ On-campus dining locations, hours, food types, etc. will have accuracy greater than 50%. â€‹ Food trucksâ€™ general locations, hours, and food types on Drexel Campus will have accuracy greater than 40%. "
+691,NFR,"Fast Response The average time for the server to respond, over the question testing set, will be less than or equal to 2 seconds"
+692,NFR,"Security The connection between the Web API and the programs will use HTTPS, for security."
+693,NFR,Ease of Useâ€‹ A new user will make less than 3 mistakes in 5 minutes after 5 minutes of use.
+694,NFR,The search feature should be prominent and easy to find for the user.
+695,NFR,"The different search options should be evident, simple and easy to understand."
+696,NFR,The results displayed in the list view should be user friendly and easy to understand. Selecting an element in the result list should only take one click.
+697,NFR,The results displayed in the map view should be user friendly and easy to understand. Selecting a pin on the map should only take one click.
+698,NFR,The information link should be prominent and it should be evident that it is a usable link. Selecting the information link should only take one click.
+699,NFR,The user interface must be GUI based.
+700,NFR,The users are required to input the data from cell phone keypad
+701,NFR,User has the options to change the settings locally and remotely.
+702,NFR,Reduce the typing option by giving support for select menus.
+703,NFR,The primary performance requirement is speed of the network.  The application itself will only have minimal logic and so there should be little to no issues with the computation required by the phone itself.
+704,NFR,"There are no safety requirements with this application, other than any normal hazards of a mobile device.  The only hazard is a user using the device when they should not be, such as while driving."
+705,NFR,The application must be able to link up with the INTERNAL system in order for users to properly log in and be identified.  This information must be kept secure.
+706,NFR,"The primary attribute of this application will be usability given the large amounts of data and information that will be presented on such a small screen, as well as the userâ€™s ability to input data into the device in a reasonable manner that should not be that much more difficult than if they were at an actual computer."
+707,NFR,"With regards to the intended number of users in the Amsterdam pilot, and the projected load scenarios, the intention is for the system to be able to serve 20.000 queries / day (in large part during the 4 peak traffic hours)."
+708,NFR,"In order to create a viable offering for the user we will have to build a simple, transparent system that can be understood and trusted by the people that are using it."
+709,NFR,"Anonimization & aggregation, so that route information may be shared safely without disclosing personal information."
+710,NFR,"Encryption, for all data that is privacy sensitive, but must be persisted on the server in order for basic functionality. "
+711,NFR,Permit the use of unverified (anonymous) avatars / aliases.
+712,NFR,Give control to end-users over private data (at least a delete private repository option)
+713,NFR,"The system should be language agnostic, since portability is a prime goal of the overall project. English, turkish, Finnish, and Italian should be at least be supported because these are the replication partners."
+714,NFR,All text elements in the user interfaces are presented in the selected language English and Dutch.
+715,NFR,Sub-apps and their launchers can be added to the main app by a qualified programmer.
+716,NFR,Sub-apps and their launchers in the main app can be deleted by a qualified programmer.
+717,NFR,"The application maintainer should also be able to change the (lists of) information sources of the sub-applications: agenda, news, Facebook and Twitter "
+718,NFR,"Application maintainers should be able to maintain the application, without having knowledge about Java Android programming. They should be able to modify the approximate appearance of the application. This means the colors, and GUI figures in the applications, but not the addition/deletion of GUI elements."
+719,NFR,"Application will be extendable. This means that a skilled Java Android programmer should be able to easily add a new sub-application to insApption, and add a launcher to it in the main-application."
+720,NFR,Users must be a Radford University student in order to access the automatic class schedule and assignment sharing features of this application Users can authenticate by logging in using their RU username and password.
+721,NFR,Most functionality will not require network connectivity.  System components that require authentication through Radford University and network connectivity will function as long as the systems maintained by the University are available.
+722,NFR,The development team will follow best practices for clean code and software modularity in order to make the application as maintainable as possible.
+723,NFR,Users will be able to access this application on or off campus anytime on their mobile device without the need of an internet connection.
+724,NFR,"The application will be highly extensible in terms of adding course and calendar details or views.  However, the application in general has low extensibility."
+725,NFR,An application instance shall be able to be reusable every semester for a returning student.The user will be able to update their class schedule by having the application check for a registered schedule set for the next semester and if the current school semester is over.Application components will be able to be integrated into the larger RU Mobile application developed and maintained by Radford University.
+726,NFR,The system will be designed in such a way that the algorithms for the four main units will be able to be easily swapped out.
+727,NFR,The accuracy of the Generic Question Constructionâ€‹ part will be close to 80%.
+728,NFR,The accuracy of the Generic Answer Constructionâ€‹ unit will be close to 70%.
+729,NFR,The accuracy of the Generic Answer Populationâ€‹ unit will be close to 70%.
+730,NFR,"The average time for the server to respond, over the question testing set, will be less than or equal to 2 seconds."
+731,NFR,"The connection between the Web API and the programs will use HTTPS, for security."
+732,NFR,A new user will make less than 3 mistakes in 5 minutes after 5 minutes of use.
+733,NFR,"FAU class contains requirements for recording the occurrence of security relevant events that take place under TSF control. This family identifies the level of auditing, enumerates the types of events that shall be auditable by the TSF, and identifies the minimum set of audit related information that should be provided within various audit record types. The following extended requirement for the FAU class has been included in this ST because the operational environment is capable of providing security audit generation for TSF functions."
+734,NFR,"Performance should not be an issue because all of our server queries involve small pieces of data. Changing screens will require very little computation and thus will occur very quickly. Server updates should only take a few seconds as long as the phone can maintain a steady signal. The cost-division algorithms used by in application will be highly efficient, taking only a fraction of a second to compute."
+735,NFR,SplitPay will not affect data stored outside of its servers nor will it affect any other applications installed on the userâ€™s phone. It cannot cause any damage to the phone or its internal components. The only potential safety concern associated with this application applies to virtually all handset apps: SplitPay should not be used while operating a vehicle or in any other situation where the userâ€™s attention must be focused elsewhere.
+736,NFR,"This application assumes that only the user or whoever he/she allows will have access to his/her Android handset. With that being said, only a Google email address is required to verify the identity of the user upon opening the app. Since it is not password protected, there is no method to authenticate the userâ€™s identity. This could only pose a thread if a user has set up PayPal functionality, however any transaction involving real currency must be authorized and confirmed before becoming final. The PayPal API provides all of the security checks needed to ensure that no fraudulent transactions occur."
+737,NFR,The graphical user interface of SplitPay is to be designed with usability as the first priority. The app will be presented and organized in a manner that is both visually appealing and easy for the user to navigate. There will be feedbacks and visual cues such as notifications to inform users of updates and pop-ups to provide users with instructions.
+738,NFR,"To ensure reliability and correctness, there will be zero tolerance for errors in the algorithm that computes and splits expenses between group members. To maintain flexibility and adaptability, the app will take into account situations in which a user loses internet connection or for whatever reason cannot establish a connection with the server. These users will still be able to use the application, but any Bills, transactions, etc. posted while disconnected will be cached until the connection is restored."
+739,NFR,All text elements in the user interfaces are presented in the selected language (for language selection see requirement UCAR101. The available languages are mentioned in UCAR002 and UCAR003) 
+740,NFR,English is an available language. 
+741,NFR,Dutch is an available language.
+742,NFR,The administrator can change the colors used in the user interfaces of the sub-apps and main-app (this does not include the external resources).
+743,NFR,The administrator can change the fonts used in the user interfaces of the sub-apps and main-app (this does not include the external resources).
+744,NFR,The administrator can change icons used in the user interfaces of the sub-apps and main-app (this does not include the external resources).
+745,NFR,The administrator can change buttons used in the user interfaces of the sub-apps and main-app (this does not include the external resources).
+746,NFR,The administrator can change the background used in the user interfaces of the sub- apps and main-app (this does not include the external resources).
