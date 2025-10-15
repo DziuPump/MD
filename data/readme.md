@@ -2,6 +2,8 @@
 
 This repository contains research data and examples used in my master's thesis, which explores how Large Language Models (LLMs) can generate and evaluate software test cases from system requirements.
 
+Non-functional requirements are transformed into usable test cases using various tools, including LLMs, Microsoft Azure, Jira. Generated Test cases coverage of corresponding requirement will be evaluated and compared between various LLMs.
+
 # Data Directory
 
 XY example contains:
