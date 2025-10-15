@@ -41,3 +41,11 @@ XY example contains:
 ```
 
 Dataset (Filtered_Non-Functional_Requirements.csv) contains non-functional requirements examples
+
+### Planned extensions:
+
+Integrate additional LLMs (e.g., Mistral, Llama 3).
+
+Automate metric calculation and visualization.
+
+Develop a custom web dashboard replacing Jira for managing requirements and generated test cases.
