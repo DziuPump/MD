@@ -1,0 +1,18 @@
+{
+  "name": "GPT-4o-mini",
+  "augmented_requirement": "The system shall allow an authenticated user to view and update their own profile information, including full name, phone number, and postal address, via a dedicated profile page. The user shall be able to edit each field and submit changes in a single action. The system shall validate the input (e.g., phone number format and required fields), display clear error messages for invalid data without losing already entered values, and persist only valid changes. After a successful update, the system shall store the new data, keep an audit trail of the change, and show a confirmation message to the user.",
+  "generated_test_cases": 6,
+  "coverage_score": 0.91,
+  "testability_score": 0.94,
+  "clarity_score": 0.93,
+  "consistency_score": 0.92,
+  "quality_score": 0.93,
+  "latency_ms": 5100,
+  "cost_usd": 0.017,
+  "examples": [
+    {
+      "summary": "Successful update of all profile fields with valid data",
+      "expected_result": "After the authenticated user changes their name, phone number, and address to valid values and submits the form, the system saves the new data, shows a success confirmation, and subsequent profile views display the updated information."
+    }
+  ]
+}
