@@ -1,89 +1,82 @@
-You are a single AI agent that implements an end-to-end pipeline for my master's thesis system.
+You are a large language model that is being evaluated as part of a master's thesis.
 
-Your task is to take one software requirement X (functional or non-functional) and produce a structured JSON output y which contains:
-- An augmented, more testable version of the requirement for each model.
-- Generated test cases and quality metrics for each model.
-- A comparison summary across models.
+Your task is to take ONE software requirement X (functional or non-functional) and produce your OWN structured JSON output y that describes:
+- your improved, more testable version of the requirement
+- your generated test cases
+- your self-assessed quality metrics
 
-The pipeline you must internally follow for every input X is:
+IMPORTANT:
+- You are answering ONLY as yourself (this model).
+- Do NOT simulate or invent outputs for other models.
+- Do NOT return a list of multiple models.
+- The JSON must describe only ONE model: you.
+
+-------------------
+PIPELINE (INTERNALLY)
+-------------------
+
+For the given requirement X:
 
 1. DATA UNDERSTANDING
-   - Read and fully understand the requirement id, title, description and type.
+   - Read and understand X: id, title, description, type.
    - Identify whether it is functional (FR) or non-functional (NFR).
-   - Extract the key behaviours, constraints, and quality attributes that should be tested.
+   - Extract key behaviours, constraints and quality attributes that need to be tested.
 
-2. INFERENCE (TEST DESIGN FOR EACH MODEL)
-   For each LLM model in the list:
-   - GPT-4o-mini
-   - Gemini-1.5-pro
-   - Claude-3.5-sonnet
+2. INFERENCE (TEST DESIGN)
+   - Produce an augmented_requirement: a clearer, more specific, measurable and testable version of X.
+   - Design a set of high-level system / acceptance test cases that a human tester could execute.
+   - Cover:
+     - main success paths,
+     - alternative / error flows,
+     - boundary or edge conditions (if applicable).
 
-   Do the following:
-   - Generate an augmented_requirement: a clearer, testable and measurable version of the original requirement X.
-   - Design a set of system / acceptance test cases that could be executed by testers.
-   - Make sure the test cases cover:
-     - Main success scenarios,
-     - Typical alternative flows,
-     - Negative / error cases,
-     - Boundary or edge conditions (where applicable).
+3. REASONING (SELF-EVALUATION)
+   - Based on the test cases you generated, assign the following scores (0.0–1.0):
+     - coverage_score: how completely your test cases cover the requirement.
+     - testability_score: how easy it is to execute and verify your test cases.
+     - clarity_score: how clear and unambiguous your test cases are.
+     - consistency_score: how internally consistent and non-contradictory your test cases are.
+     - quality_score: your overall quality assessment, combining the above.
+   - Also provide:
+     - generated_test_cases: integer, number of distinct test cases you produced.
+     - latency_ms: rough estimated latency (milliseconds) for generating this result.
+     - cost_usd: rough estimated API cost for generating this result.
 
-3. REASONING (EVALUATION & SCORING)
-   For each model independently:
-   - Evaluate the generated test cases using the following metrics (0–1 scale unless otherwise stated):
-     - coverage_score: how completely the test cases cover the requirement and its possible behaviours.
-     - testability_score: how easily the requirement and test cases can be executed and verified in practice.
-     - clarity_score: how clear and unambiguous the test cases are for a human tester.
-     - consistency_score: how internally consistent and non-contradictory the test cases are.
-     - quality_score: an overall subjective quality score combining the previous metrics.
-   - Additionally estimate:
-     - generated_test_cases: integer, how many distinct test cases were produced.
-     - latency_ms: rough estimate of model latency in milliseconds.
-     - cost_usd: rough estimate of model usage cost per single generation.
+   - Select at least ONE example test case and provide:
+     - summary: short natural language description.
+     - expected_result: what should happen if the system behaves correctly.
 
-   Select at least ONE representative example test case for each model with:
-   - summary: short natural language description of the scenario.
-   - expected_result: what should happen if the system behaves correctly.
-
-4. OUTPUT GENERATION (STRUCTURED JSON y)
-   - Produce a single JSON object with the structure:
+4. OUTPUT FORMAT
+   - Return a SINGLE JSON object with the following structure:
 
    {
-     "models": [
+     "name": "<string, this model name>",
+     "augmented_requirement": "<string>",
+     "generated_test_cases": <integer>,
+     "coverage_score": <float>,
+     "testability_score": <float>,
+     "clarity_score": <float>,
+     "consistency_score": <float>,
+     "quality_score": <float>,
+     "latency_ms": <integer>,
+     "cost_usd": <float>,
+     "examples": [
        {
-         "name": "<string, model name>",
-         "augmented_requirement": "<string>",
-         "generated_test_cases": <integer>,
-         "coverage_score": <float>,
-         "testability_score": <float>,
-         "clarity_score": <float>,
-         "consistency_score": <float>,
-         "quality_score": <float>,
-         "latency_ms": <integer>,
-         "cost_usd": <float>,
-         "examples": [
-           {
-             "summary": "<string>",
-             "expected_result": "<string>"
-           }
-         ]
+         "summary": "<string>",
+         "expected_result": "<string>"
        }
-     ],
-     "comparison_summary": {
-       "best_coverage": "<model name>",
-       "best_clarity": "<model name>",
-       "best_testability": "<model name>",
-       "best_overall": "<model name>",
-       "notes": "<short textual explanation>"
-     }
+     ]
    }
 
-IMPORTANT CONSTRAINTS:
-- Follow the pipeline steps above, but DO NOT describe them in the output.
-- Output MUST be valid JSON only, with double quotes around keys and string values.
-- Do not include any additional commentary before or after the JSON.
-- If you need to make assumptions, choose reasonable values based on typical web systems.
+CONSTRAINTS:
+- Output MUST be valid JSON only (no extra text before or after).
+- Use double quotes for all keys and string values.
+- Do NOT include any list of models or comparison_summary.
+- Assume your own model name is known to you and fill it into "name".
 
-Now process the following NEW requirement X and return y in the JSON structure above:
+-------------------
+NOW PROCESS THIS X:
+-------------------
 
 X = {
   "id": "FR-250",
