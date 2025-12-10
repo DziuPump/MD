@@ -1,0 +1,261 @@
+You are the same single AI agent as in the zero-shot prompt.
+
+Your goal is to map an input requirement X to an output y using the SAME pipeline:
+- Data understanding
+- Inference (test design for each model)
+- Reasoning (scoring and comparison)
+- Output generation as structured JSON
+
+You will first see several example (X, y) pairs that demonstrate the desired behaviour and JSON structure. Then you will receive a NEW X, and you must produce a corresponding y that matches the style and structure of the examples.
+
+====================
+FEW-SHOT EXAMPLES
+====================
+
+Example 1:
+
+X = {
+  "id": "NFR-202",
+  "title": "System performance under load",
+  "description": "The application should handle up to 1000 concurrent users without performance degradation."
+}
+
+y = {
+  "models": [
+    {
+      "name": "GPT-4o-mini",
+      "augmented_requirement": "When tested under simulated load of 1000 concurrent users, the system shall maintain an average response time below 2 seconds and no more than 1% failed requests.",
+      "generated_test_cases": 7,
+      "coverage_score": 0.88,
+      "testability_score": 0.92,
+      "clarity_score": 0.90,
+      "consistency_score": 0.91,
+      "quality_score": 0.90,
+      "latency_ms": 5200,
+      "cost_usd": 0.018,
+      "examples": [
+        {
+          "summary": "Load test with 1000 concurrent users",
+          "expected_result": "Average response time < 2s, error rate < 1% during a 15-minute run."
+        }
+      ]
+    },
+    {
+      "name": "Gemini-1.5-pro",
+      "augmented_requirement": "The system must support 1000 simultaneous sessions, maintaining a median response time under 1.5 seconds and a maximum failure rate of 0.5%.",
+      "generated_test_cases": 9,
+      "coverage_score": 0.94,
+      "testability_score": 0.85,
+      "clarity_score": 0.88,
+      "consistency_score": 0.89,
+      "quality_score": 0.89,
+      "latency_ms": 6100,
+      "cost_usd": 0.021,
+      "examples": [
+        {
+          "summary": "Concurrent load test with 1000 users",
+          "expected_result": "Median response time < 1.5s, with no more than 0.5% failed requests."
+        }
+      ]
+    },
+    {
+      "name": "Claude-3.5-sonnet",
+      "augmented_requirement": "Under a simulated workload of 1000 concurrent users, the platform shall respond within 2 seconds at the 95th percentile and maintain 99% uptime.",
+      "generated_test_cases": 6,
+      "coverage_score": 0.83,
+      "testability_score": 0.94,
+      "clarity_score": 0.93,
+      "consistency_score": 0.92,
+      "quality_score": 0.91,
+      "latency_ms": 4800,
+      "cost_usd": 0.017,
+      "examples": [
+        {
+          "summary": "Uptime validation under heavy load",
+          "expected_result": "System maintains 99% uptime and 95th percentile response time ≤ 2s during the test window."
+        }
+      ]
+    }
+  ],
+  "comparison_summary": {
+    "best_coverage": "Gemini-1.5-pro",
+    "best_clarity": "Claude-3.5-sonnet",
+    "best_testability": "Claude-3.5-sonnet",
+    "best_overall": "GPT-4o-mini",
+    "notes": "Gemini produced the most complete load-related coverage, Claude had the clearest and most testable scenarios, while GPT-4o-mini maintained the best overall balance."
+  }
+}
+
+----------------------------------------------------
+
+Example 2:
+
+X = {
+  "id": "FR-101",
+  "title": "User password reset feature",
+  "description": "As a user, I want to reset my password via email link so that I can regain access if I forget it.",
+  "type": "Functional Requirement"
+}
+
+y = {
+  "models": [
+    {
+      "name": "GPT-4o-mini",
+      "generated_test_cases": 4,
+      "coverage_score": 0.90,
+      "testability_score": 0.88,
+      "clarity_score": 0.92,
+      "consistency_score": 0.91,
+      "quality_score": 0.90,
+      "latency_ms": 4300,
+      "cost_usd": 0.012,
+      "examples": [
+        {
+          "summary": "Verify password reset email is sent for valid user",
+          "expected_result": "Registered user receives a reset email with a unique link within 1 minute."
+        },
+        {
+          "summary": "Check invalid email shows proper error",
+          "expected_result": "System displays an 'Email not found' message and does not send any email."
+        }
+      ]
+    },
+    {
+      "name": "Gemini-1.5-pro",
+      "generated_test_cases": 5,
+      "coverage_score": 0.95,
+      "testability_score": 0.89,
+      "clarity_score": 0.85,
+      "consistency_score": 0.88,
+      "quality_score": 0.90,
+      "latency_ms": 4900,
+      "cost_usd": 0.015,
+      "examples": [
+        {
+          "summary": "Verify email reset workflow completion",
+          "expected_result": "User can successfully set a new password via emailed link and log in with it."
+        },
+        {
+          "summary": "Check expired reset link behaviour",
+          "expected_result": "System shows 'Link expired' and forces user to request a new link."
+        }
+      ]
+    },
+    {
+      "name": "Claude-3.5-sonnet",
+      "generated_test_cases": 3,
+      "coverage_score": 0.82,
+      "testability_score": 0.91,
+      "clarity_score": 0.96,
+      "consistency_score": 0.93,
+      "quality_score": 0.89,
+      "latency_ms": 3700,
+      "cost_usd": 0.010,
+      "examples": [
+        {
+          "summary": "Verify new password meets policy",
+          "expected_result": "Password change fails with a clear error message if it does not meet complexity requirements."
+        }
+      ]
+    }
+  ],
+  "comparison_summary": {
+    "best_coverage": "Gemini-1.5-pro",
+    "best_clarity": "Claude-3.5-sonnet",
+    "best_testability": "Claude-3.5-sonnet",
+    "best_overall": "GPT-4o-mini",
+    "notes": "Gemini achieved the highest scenario coverage; Claude produced the clearest and most testable descriptions; GPT-4o-mini provided the most balanced mix of coverage, clarity, and structure."
+  }
+}
+
+----------------------------------------------------
+
+Example 3:
+
+X = {
+  "id": "NFR-205",
+  "title": "API response time under load",
+  "description": "The system shall respond to API requests within 2 seconds under a load of 500 concurrent users.",
+  "type": "Non-Functional Requirement"
+}
+
+y = {
+  "models": [
+    {
+      "name": "GPT-4o-mini",
+      "generated_test_cases": 6,
+      "coverage_score": 0.92,
+      "testability_score": 0.95,
+      "consistency_score": 0.93,
+      "clarity_score": 0.90,
+      "quality_score": 0.93,
+      "latency_ms": 6200,
+      "cost_usd": 0.020,
+      "examples": [
+        {
+          "summary": "Load test with 500 concurrent users",
+          "expected_result": "Average response time ≤ 2s and 95th percentile ≤ 2.5s across all critical API endpoints."
+        }
+      ]
+    },
+    {
+      "name": "Gemini-1.5-pro",
+      "generated_test_cases": 8,
+      "coverage_score": 0.96,
+      "testability_score": 0.89,
+      "consistency_score": 0.91,
+      "clarity_score": 0.88,
+      "quality_score": 0.91,
+      "latency_ms": 7100,
+      "cost_usd": 0.023,
+      "examples": [
+        {
+          "summary": "Stress test with ramp-up to 800 users",
+          "expected_result": "System maintains < 3s response time at 800 concurrent users without critical failures."
+        }
+      ]
+    },
+    {
+      "name": "Claude-3.5-sonnet",
+      "generated_test_cases": 5,
+      "coverage_score": 0.87,
+      "testability_score": 0.96,
+      "consistency_score": 0.94,
+      "clarity_score": 0.92,
+      "quality_score": 0.92,
+      "latency_ms": 5400,
+      "cost_usd": 0.018,
+      "examples": [
+        {
+          "summary": "Latency verification under steady load",
+          "expected_result": "All API endpoints respond in ≤ 2s on average during a 10-minute steady-load test."
+        }
+      ]
+    }
+  ],
+  "comparison_summary": {
+    "best_coverage": "Gemini-1.5-pro",
+    "best_clarity": "Claude-3.5-sonnet",
+    "best_testability": "Claude-3.5-sonnet",
+    "best_overall": "GPT-4o-mini",
+    "notes": "GPT-4o-mini produced the most technically balanced test suite; Gemini covered more edge cases; Claude was strongest in testability and clarity."
+  }
+}
+
+====================
+TASK: NEW OBSERVATION
+====================
+
+Now, using the same style, structure, and level of detail as the examples above, process the following NEW requirement X_new and produce its corresponding y.
+
+Requirements:
+- Follow the same internal pipeline (understanding → inference → reasoning → JSON output).
+- Output MUST be a single JSON object only, with the same overall structure as in the examples.
+- Do NOT include any explanations or text outside the JSON.
+
+X_new = {
+  "id": "FR-305",
+  "title": "User profile data update",
+  "description": "As an authenticated user, I want to update my profile information (name, phone number, and address) so that my account details remain accurate.",
+  "type": "Functional Requirement"
+}
