@@ -1,10 +1,6 @@
 {
   "name": "GPT-5.1",
-  "augmented_requirement": "The system shall allow any authenticated registered user to enable, switch, or disable optional two-factor authentication (2FA) for interactive login.
-  When 2FA is enabled, after a correct username and password are entered, the system shall require a second factor in the form of a 6-digit one-time code delivered via either (a) the user’s verified email address or (b) a paired mobile authenticator app,
-  according to the user’s configured 2FA method. Each code shall be unique per login attempt, valid for 5 minutes from issuance, and automatically invalidated after the first successful use or after
-  5 consecutive failed verification attempts, whichever occurs first. If 2FA is disabled, successful login shall require only username and password. Changes to 2FA settings (enable, switch method, disable)
-  shall require the user to re-enter their current password and shall only take effect after successful confirmation of a test code using the selected 2FA method.",
+  "augmented_requirement": "The system shall allow any authenticated registered user to enable, switch, or disable optional two-factor authentication (2FA) for interactive login. When 2FA is enabled, after a correct username and password are entered, the system shall require a second factor in the form of a 6-digit one-time code delivered via either (a) the user’s verified email address or (b) a paired mobile authenticator app, according to the user’s configured 2FA method. Each code shall be unique per login attempt, valid for 5 minutes from issuance, and automatically invalidated after the first successful use or after 5 consecutive failed verification attempts, whichever occurs first. If 2FA is disabled, successful login shall require only username and password. Changes to 2FA settings (enable, switch method, disable) shall require the user to re-enter their current password and shall only take effect after successful confirmation of a test code using the selected 2FA method.",
   "generated_test_cases": 10,
   "coverage_score": 0.88,
   "testability_score": 0.93,
@@ -16,19 +12,11 @@
   "examples": [
     {
       "summary": "Enable 2FA with email and verify that subsequent login requires a valid one-time code.",
-      "expected_result": "User logs in with correct username and password, navigates to account security settings, and enables
-      2FA by choosing the email method. The system prompts for password re-entry, sends a 6-digit test code to the user’s verified email,
-      and requires the user to enter this code. After the user enters the correct code within 5 minutes, the system confirms that 2FA is enabled.
-      On the next logout and login attempt, after the user enters the correct username and password, the system sends a new 6-digit code to the same email and shows a 2FA prompt.
-      Only after the user enters the correct code within 5 minutes is access granted to the account; entering an incorrect or expired code results in a clear error message and no session is created."
+      "expected_result": "User logs in with correct username and password, navigates to account security settings, and enables 2FA by choosing the email method. The system prompts for password re-entry, sends a 6-digit test code to the user’s verified email, and requires the user to enter this code. After the user enters the correct code within 5 minutes, the system confirms that 2FA is enabled. On the next logout and login attempt, after the user enters the correct username and password, the system sends a new 6-digit code to the same email and shows a 2FA prompt. Only after the user enters the correct code within 5 minutes is access granted to the account; entering an incorrect or expired code results in a clear error message and no session is created."
     },
     {
       "summary": "Login with 2FA enabled using an incorrect one-time code repeatedly until codes are invalidated.",
-      "expected_result": "User has 2FA enabled with the mobile app method.
-      At login, after entering a correct username and password, the system prompts for a 6-digit code.
-      The user enters an incorrect code five times in a row. Each time the system rejects the code, shows an appropriate error message, and does not create a session.
-      After the fifth failed attempt, the current code is invalidated and further attempts with that code are rejected, even if the correct code is entered afterward.
-      The user must request or generate a new valid code and enter it correctly within the validity period to complete login successfully."
+      "expected_result": "User has 2FA enabled with the mobile app method. At login, after entering a correct username and password, the system prompts for a 6-digit code. The user enters an incorrect code five times in a row. Each time the system rejects the code, shows an appropriate error message, and does not create a session. After the fifth failed attempt, the current code is invalidated and further attempts with that code are rejected, even if the correct code is entered afterward. The user must request or generate a new valid code and enter it correctly within the validity period to complete login successfully."
     }
   ]
 }
