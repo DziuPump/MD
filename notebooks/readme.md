@@ -8,4 +8,5 @@ What worked well was the model’s ability to identify key test dimensions and g
 
 # NUORODA
 https://colab.research.google.com/drive/19G7nRQNoygqSMy3voYCvaOXD__kWCaBU?usp=sharing (1.5 darbas)
+
 https://colab.research.google.com/drive/1TNf_VOennUEOJi3KkejMX3uDbeg545J4#scrollTo=CgIsZXOykkBQ (1.6 darbas)
